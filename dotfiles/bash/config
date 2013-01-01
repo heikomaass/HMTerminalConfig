@@ -72,5 +72,7 @@ On_IPurple='\e[0;105m'  # Purple
 On_ICyan='\e[0;106m'    # Cyan
 On_IWhite='\e[0;107m'   # White
 
-PS1="\u@\h:\w \$(vcprompt -f \"[%s:${Purple}%b${Color_Off}]%a%m \")"
+
+PS1="\u@\h:\w \$(vcprompt -f \"[%s:${Purple}%b${Color_Off}]%a%m \")$ "
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+source ~/bin/git-completion.bash
