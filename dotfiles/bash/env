@@ -3,3 +3,8 @@ export GRADE_HOME=~/gradle
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=${PATH}:${GRADE_HOME}/bin
 export PATH=${PATH}:~/bin
+
+export PATH=${PATH}:~/.rvm/bin
+
+# MacPorts
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
