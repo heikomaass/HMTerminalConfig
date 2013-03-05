@@ -1,6 +1,6 @@
 export ANDROID_HOME=~/android-sdks
 export GRADE_HOME=~/gradle
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools
 export PATH=${PATH}:${GRADE_HOME}/bin
 export PATH=${PATH}:~/bin
 
