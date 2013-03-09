@@ -9,6 +9,8 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set hls
+set number
+set nowrap:
 
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd w
