@@ -1,16 +1,18 @@
-call pathogen#infect()
+:call pathogen#infect()
 syntax on
 filetype plugin indent on
-au BufRead,BufNewFile *.twig set filetype=htmljinja
-highlight Pmenu ctermbg=238 gui=bold
 set encoding=UTF-8
 set fileencoding=UTF-8
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set hls
+set nowrap
+set number
 
+"NERDTree
 autocmd vimenter * NERDTree
 autocmd vimenter * wincmd w
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-nmap ,n :NERDTreeFind<CR>
+
+"Colors
+highlight Pmenu ctermbg=238 gui=bold
