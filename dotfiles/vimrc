@@ -8,6 +8,7 @@ set tabstop=4
 set shiftwidth=4
 set nowrap
 set number
+set history=200
 
 "NERDTree
 autocmd vimenter * NERDTree
