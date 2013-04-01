@@ -9,6 +9,7 @@ set shiftwidth=4
 set nowrap
 set number
 set history=200
+set path+=**
 
 "NERDTree
 autocmd vimenter * NERDTree
