@@ -8,6 +8,8 @@ set tabstop=4
 set shiftwidth=4
 set nowrap
 set number
+set history=200
+set path+=**
 
 "NERDTree
 autocmd vimenter * NERDTree
@@ -16,3 +18,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 "Colors
 highlight Pmenu ctermbg=238 gui=bold
+
+"Mappings
+
+"Expansion of Active File Directory
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
