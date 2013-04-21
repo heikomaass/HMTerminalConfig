@@ -10,6 +10,7 @@ set nowrap
 set number
 set history=200
 set path+=**
+set hlsearch
 
 "NERDTree
 autocmd vimenter * NERDTree
