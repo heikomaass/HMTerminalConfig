@@ -1,1 +1,6 @@
 alias ls='ls -GFh'
+alias gs='git status'
+alias gci='git commit'
+alias gco='git checkout'
+alias gp='git pull'
+alias gm='git merge'
