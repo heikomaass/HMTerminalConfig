@@ -9,3 +9,6 @@ In ~/.bash_profile add:
 In ~/.bashrc add:
 
     . ~/bin/dotfiles/bashrc
+
+In ~ execute:
+    ln -s ~/bin/dotfiles/vimrc .vimrc
