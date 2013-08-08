@@ -9,8 +9,5 @@ export PATH=${PATH}:${SCALA_HOME}/bin
 export PATH=${PATH}:~/bin
 export PATH=${PATH}:~/.rvm/bin
 
-# MacPorts
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-
 # jpegoptim, optipng, advpng
 export PATH=$PATH:/Applications/ImageOptim.app/Contents/MacOS/
