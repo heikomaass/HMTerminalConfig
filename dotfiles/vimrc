@@ -11,6 +11,8 @@ set number
 set history=200
 set path+=**
 set hlsearch
+set guifont=Consolas:h16
+
 
 "NERDTree
 autocmd vimenter * NERDTree
