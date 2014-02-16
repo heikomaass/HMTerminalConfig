@@ -1,12 +1,16 @@
 export ANDROID_HOME=~/sdks/android-sdks
 export GRADE_HOME=~/sdks/gradle
+export GROOVY_HOME=~/sdks/groovy
 export SCALA_HOME=~/sdks/scala
 export JREBEL_HOME=~/sdks/jrebel
+export M2_HOME=~/sdks/maven
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_13.jdk/Contents/Home
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools
 export PATH=${PATH}:${GRADE_HOME}/bin
 export PATH=${PATH}:${JAVA_HOME}/bin
+export PATH=${PATH}:${GROOVY_HOME}/bin
 export PATH=${PATH}:${SCALA_HOME}/bin
+export PATH=${PATH}:${M2_HOME}/bin
 export PATH=${PATH}:~/bin
 export PATH=${PATH}:~/.rvm/bin
 
