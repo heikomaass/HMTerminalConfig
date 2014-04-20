@@ -12,7 +12,6 @@ export PATH=${PATH}:${GROOVY_HOME}/bin
 export PATH=${PATH}:${SCALA_HOME}/bin
 export PATH=${PATH}:${M2_HOME}/bin
 export PATH=${PATH}:~/bin
-export PATH=${PATH}:~/.rvm/bin
 
 # jpegoptim, optipng, advpng
 export PATH=$PATH:/Applications/ImageOptim.app/Contents/MacOS/
