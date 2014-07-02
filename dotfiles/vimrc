@@ -1,28 +1,66 @@
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
-set encoding=UTF-8
-set fileencoding=UTF-8
-set expandtab
-set tabstop=4
-set shiftwidth=4
-set nowrap
-set number
-set history=200
-set path+=**
-set hlsearch
-set guifont=Consolas:h16
+" Setup Bundle Support {
+    set nocompatible     " be iMproved, required
+    filetype off         " required
+    " set the runtime path to include Vundle and initialize
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin()
+    Plugin 'scrooloose/nerdtree'
+    Plugin 'gmarik/Vundle.vim'
+    Bundle 'jistr/vim-nerdtree-tabs'
+    call vundle#end()
+" }
+
+" NerdTree {
+    map <C-e> <plug>NERDTreeTabsToggle<CR>
+    map <leader>e :NERDTreeFind<CR>
+    nmap <leader>nt :NERDTreeFind<CR>
+
+    let NERDTreeShowBookmarks=1
+    let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
+    let NERDTreeChDirMode=0
+    let NERDTreeQuitOnOpen=1
+    let NERDTreeMouseMode=2
+    let NERDTreeShowHidden=1
+    let NERDTreeKeepTreeInNewTab=1
+    let g:nerdtree_tabs_open_on_gui_startup=0
+"} 
+
+" General {
+    filetype plugin indent on
+    scriptencoding utf-8
+    set encoding=UTF-8
+    set fileencoding=UTF-8
+    set history=200
+    set number
+    set guifont=Consolas:h16
+    set ruler
+    set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " A ruler on steroids
+    set showcmd " Show partial commands in status line and
+" }
+
+" Formatting {
+    syntax on
+    set nowrap
+    set autoindent
+    set shiftwidth=4
+    set expandtab
+    set tabstop=4
+    set softtabstop=4 " Let backspace delete indent
+    set nojoinspaces " Prevents inserting two spaces after punctuation on a join (J)
+" } 
+
+" Key (re)Mappings {
+    let mapleader = ','
+    map <C-J> <C-W>j<C-W>_
+    map <C-K> <C-W>k<C-W>_
+    map <C-L> <C-W>l<C-W>_
+    map <C-H> <C-W>h<C-W>_
+    noremap j gj
+    noremap k gk
+" }
+
+"Colors { 
+    highlight Pmenu ctermbg=238 gui=bold
+"}
 
 
-"NERDTree
-autocmd vimenter * NERDTree
-autocmd vimenter * wincmd w
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-"Colors
-highlight Pmenu ctermbg=238 gui=bold
-
-"Mappings
-
-"Expansion of Active File Directory
-cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
