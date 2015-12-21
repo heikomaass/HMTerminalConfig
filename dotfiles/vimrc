@@ -62,6 +62,10 @@
     " Move by line on screen rather by line in the file
     noremap j gj
     noremap k gk
+
+
+    " For when you forget to sudo.. Really Write the file.
+    cmap w!! w !sudo tee % >/dev/null
 " }
 
 "Colors { 
