@@ -6,6 +6,7 @@
     call vundle#begin()
     Plugin 'scrooloose/nerdtree'
     Plugin 'gmarik/Vundle.vim'
+    Plugin 'tpope/vim-surround'
     Bundle 'jistr/vim-nerdtree-tabs'
     call vundle#end()
 " }
